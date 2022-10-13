@@ -23,5 +23,5 @@ if __name__ == '__main__':
     if mode == 'aws':
         simulator.generate(STREAM_NAME, boto3.client('kinesis'))
     else:
-         simulator.generate(STREAM_NAME)
+        simulator.generate(STREAM_NAME)
     

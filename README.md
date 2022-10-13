@@ -6,10 +6,15 @@ The code is the Reefer simulator to sent telemetries events to Kinesis Data Stre
 
 ![](./docs/images/archi-aws-mapping.png)
 
+## Unit testing
+
+```sh
+python reefer_simulator_tool.py local
+```
 
 ## Run it in Cloud9
 
-* Copy paste the reefer_simulator.py
+* Copy paste the `reefer_simulator_tool.py` and the `app` folder
 
 * Set STREAM_NAME environment variable in Terminal
 
@@ -21,15 +26,36 @@ export STREAM_NAME=telemetries
 * Start
 
 ```sh
-python reefer_simulator.py
+python reefer_simulator_tool.py
 ```
 
 * Stop it with Control-C
 
 ## Build docker image
 
+* Build
+
 ```sh
+cd app
 docker build -t jbcodeforce/reefer-simulator .
-dokcer push jbcodeforce/reefer-simulator
 ```
 
+* Run locally
+
+```sh
+docker run -v $(pwd):/app -e STREAM_NAME=telemetries -ti -p 5000:5000 jbcodeforce/reefer-simulator
+```
+
+Access the OpenAPI doc at [http://localhost:5000/apidocs](http://localhost:5000/apidocs).
+
+* Push to dockerhub
+
+```sh
+docker push jbcodeforce/reefer-simulator
+```
+
+* Push to you ECR
+
+## Deploy with Fargate
+
+* 

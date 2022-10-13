@@ -1,0 +1,43 @@
+Control the reefer telemetry simulation. The supported simulations are: co2sensor, power, o2sensor, temperature, normal
+---
+consumes:
+    - application-json
+parameters:
+  - in: body
+    name: control
+    description: Mandatory control json object
+    required: true
+    schema:
+        $ref: "#/definitions/Control"
+    example:
+        containerID: C11
+        simulation: tempgrowth| normal 
+        nb_of_records: 250
+        product_id: covid-19
+responses:
+    202:
+        description: A successful reply
+        examples:
+            text/plain: Simulation started!
+    400:
+        description: Container ID is missing
+    404:
+        description: Wrong simulation controller data error
+definitions:
+    Control:
+        title: A control object to control the reefer telemetry simulation
+        type: object
+        properties:
+            containerID:
+                type: string
+                enum: [C01, C02, C03, C04, C05, C06]
+            simulation:
+                type: string
+                enum: [tempgrowth, normal]
+            nb_of_records:
+                type: integer
+                minimum: 1
+                maximum: 5000
+            product_id: 
+                type: string
+                enum: [P01,P02,P03,P04,covid-19]

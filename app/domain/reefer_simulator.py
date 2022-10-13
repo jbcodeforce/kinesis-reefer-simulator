@@ -12,7 +12,7 @@ temperature values.
 This is to connect to Kinesis
 '''
 
-STREAM_NAME = os.getenv("STREAM_NAME")
+
 base_temp = -5. # in celcius
 MAX_TEMP = 50. # in celcius
 POWER_LEVEL = 2.7  # in kW
@@ -41,13 +41,14 @@ def buildTelemetryRecord():
         'longitude': ''
     }
 
-def generate(stream_name, kinesis_client):
-    while true:
-        data = buildTelemetryRecord()
-        print(data)
-        kinesis_client.put_record(StreamName=stream_name, Data = json.dumps(data), PartitionKey="partitionKey")
-        time.sleep(2)
+class ReeferSimulator:
 
-if __name__ == '__main__':
-    generate(STREAM_NAME, boto3.client('kinesis'))
+    def generate(self,stream_name, kinesis_client = None):
+        while True:
+            data = buildTelemetryRecord()
+            print(data)
+            if kinesis_client != None:
+                kinesis_client.put_record(StreamName=stream_name, Data = json.dumps(data), PartitionKey="partitionKey")
+            time.sleep(2)
+
     

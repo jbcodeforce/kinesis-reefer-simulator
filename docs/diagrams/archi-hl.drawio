@@ -1,70 +1,67 @@
 <mxfile host="65bd71144e">
     <diagram id="UKa0x60UbZhikQSXBitW" name="Page-1">
-        <mxGraphModel dx="1058" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="882" dy="452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="20" value="ECS" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="50" width="170" height="150" as="geometry"/>
-                </mxCell>
-                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;" edge="1" parent="1" source="3" target="4">
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;" parent="1" source="3" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" edge="1" parent="1" source="4" target="6">
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" parent="1" source="4" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="14">
+                <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Event Backbone middleware" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-                    <mxGeometry x="230" y="190" width="140" height="60" as="geometry"/>
+                <mxCell id="4" value="Event Ingestion and landing zone" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="160" width="250" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" edge="1" parent="1" source="6" target="8">
+                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" parent="1" source="6" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;exitX=0.45;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="14" target="12">
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;exitX=0.45;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="14" target="12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Compute time window T monitoring" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="260" width="140" height="60" as="geometry"/>
+                <mxCell id="6" value="Assess cold chain violation" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="250" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" edge="1" parent="1" source="8" target="9">
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" parent="1" source="8" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" edge="1" parent="1" source="8" target="21">
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" parent="1" source="8" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Assess Cold Chain Violation" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="380" width="140" height="60" as="geometry"/>
+                <mxCell id="8" value="Act on cold chain violaion" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="350" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" edge="1" parent="1" source="9" target="16">
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" parent="1" source="9" target="16" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="DynamoDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;sketch=1;" vertex="1" parent="1">
-                    <mxGeometry x="660" y="390" width="60" height="80" as="geometry"/>
+                <mxCell id="9" value="DynamoDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;sketch=1;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="340" width="60" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" edge="1" parent="1" source="12" target="18">
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;sketch=1;html=1;" parent="1" source="12" target="18" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Long Term Object Storage" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                <mxCell id="12" value="Long Term Object Storage" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
                     <mxGeometry x="200" y="410" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="Long term ingection" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
+                <mxCell id="14" value="Long term persistence to data lake" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="Dashboard Quicksight" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
+                <mxCell id="16" value="Dashboard Quicksight" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
                     <mxGeometry x="620" y="510" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="Query for Business User" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                <mxCell id="18" value="Query for Business User" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
                     <mxGeometry x="190" y="500" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="Reefer IoT&amp;nbsp;&lt;br&gt;Telemetry Sensors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="Reefer IoT&amp;nbsp;&lt;br&gt;Telemetry Sensors" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="20" y="95" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Reefer IoT&amp;nbsp;&lt;br&gt;Telemetry Sensors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="3" value="Reefer IoT&amp;nbsp;&lt;br&gt;Telemetry Sensors" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="30" y="105" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="Notification Engine" style="whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
+                <mxCell id="21" value="Notification Engine" style="whiteSpace=wrap;html=1;sketch=1;" parent="1" vertex="1">
                     <mxGeometry x="420" y="490" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>

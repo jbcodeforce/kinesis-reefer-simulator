@@ -1,0 +1,47 @@
+{
+    "namespace": "reefer.telemetry.event",
+    "name": "telemetry_payload",
+    "type": "record",
+    "fields" : [
+        {
+            "name" : "container_id",
+            "type" : "string"
+        },
+        {
+            "name" : "measurement_time",
+            "type" : "string"
+        },
+        {
+            "name" : "product_id",
+            "type" : "string"
+        },
+        {
+            "name": "temperature",
+            "type": "float"
+        },
+        {
+            "name": "kilowatts",
+            "type": "float"
+        },
+        {
+            "name": "oxygen_level",
+            "type": "float"
+        },
+        {
+            "name": "carbon_dioxide_level",
+            "type": "float"
+        },
+        {
+            "name" : "fan_1",
+            "type" : "boolean"
+        },
+        {
+            "name" : "latitude",
+            "type" : "float"
+        },
+        {
+            "name" : "longitude",
+            "type" : "float"
+        }
+    ]
+ }

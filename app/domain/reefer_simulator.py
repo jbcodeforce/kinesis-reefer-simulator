@@ -19,13 +19,13 @@ POWER_LEVEL = 2.7  # in kW
 O2_LEVEL = 21  # in percent  - below 12 is bad
 CO2_LEVEL = 7  # in percent - above 12 is bad
 
-def buildTelemetryRecord():
+def buildTelemetryRecord(cid):
     global base_temp
     temp = -5
     fan = True
-    cid = random.choice(['C01', 'C02', 'C03', 'C10'])
-    if cid == 'C02' or cid == 'C01' and base_temp < MAX_TEMP:
-        base_temp =  base_temp + 2
+    if cid == 'C02' or cid == 'C01':
+        if base_temp < MAX_TEMP:
+            base_temp =  base_temp + 2
         temp = base_temp
         fan = False
     return {
@@ -45,10 +45,12 @@ class ReeferSimulator:
 
     def generate(self,stream_name, kinesis_client = None):
         while True:
-            data = buildTelemetryRecord()
-            print(data)
-            if kinesis_client != None:
-                kinesis_client.put_record(StreamName=stream_name, Data = json.dumps(data), PartitionKey="partitionKey")
+            for cid in reefers:
+                
+                data = buildTelemetryRecord(cid)
+                print(data)
+                if kinesis_client != None:
+                    kinesis_client.put_record(StreamName=stream_name, Data = json.dumps(data), PartitionKey="partitionKey")
             time.sleep(2)
 
     

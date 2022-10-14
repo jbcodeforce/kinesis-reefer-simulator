@@ -14,8 +14,9 @@ python reefer_simulator_tool.py local
 
 ## Run it in Cloud9
 
-* Copy paste the `reefer_simulator_tool.py` and the `app` folder
 
+* Copy paste the `reefer_simulator_tool.py` and the `app` folder
+* Install boto3 library to access AWS API: `pip install boto3`
 * Set STREAM_NAME environment variable in Terminal
 
 ```sh
@@ -26,7 +27,7 @@ export STREAM_NAME=telemetries
 * Start
 
 ```sh
-python reefer_simulator_tool.py
+python reefer_simulator_tool.py aws
 ```
 
 * Stop it with Control-C
